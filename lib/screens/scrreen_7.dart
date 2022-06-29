@@ -427,7 +427,7 @@ class _new_notificationState extends State<new_notification> {
                               color: Color(0xbf000000),
                             ),
                             child: Center(
-                              child: Text("رحلة صيد",
+                              child: Text("يخوت",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 6,
@@ -449,7 +449,7 @@ class _new_notificationState extends State<new_notification> {
                               color: Color(0xffFFAC26),
                             ),
                             child: Center(
-                              child: Text("رحلة صيد",
+                              child: Text("رحلات بحرية",
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 6,

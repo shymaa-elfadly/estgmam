@@ -2,8 +2,7 @@ import 'package:firstjob/screens/scrreen_7.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
-// dependencies:
-//     gradient_app_bar: ^0.1.3
+
 
 class screen_8 extends StatefulWidget {
   const screen_8({Key? key}) : super(key: key);
@@ -426,7 +425,7 @@ class _new_notificationState extends State<new_notification> {
                               color: Color(0xbf000000),
                             ),
                             child: Center(
-                              child: Text("رحلة صيد",
+                              child: Text("يخوت",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 6,
@@ -448,7 +447,7 @@ class _new_notificationState extends State<new_notification> {
                               color: Color(0xffFFAC26),
                             ),
                             child: Center(
-                              child: Text("رحلة صيد",
+                              child: Text("رحلات بحرية",
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 6,
@@ -961,7 +960,8 @@ class _all_informationState extends State<all_information> {
       ],
     );
   }
-}class timer extends StatefulWidget {
+}
+class timer extends StatefulWidget {
   const timer({Key? key}) : super(key: key);
 
   @override
@@ -1140,7 +1140,7 @@ class flight_cancellation extends StatelessWidget {
                               color: Color(0xbf000000),
                             ),
                             child: Center(
-                              child: Text("رحلة صيد",
+                              child: Text("يخوت",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 6,
@@ -1162,7 +1162,7 @@ class flight_cancellation extends StatelessWidget {
                               color: Color(0xffFFAC26),
                             ),
                             child: Center(
-                              child: Text("رحلة صيد",
+                              child: Text("رحلات بحرية",
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 6,
@@ -1231,14 +1231,23 @@ class flight_cancellation extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
-                              Text(
-                                "سارة القحطاني",
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 15,
-                                  fontFamily: "CoconÆ Next Arabic",
-                                  fontWeight: FontWeight.w300,
-                                ),
+                              Row(
+                                children: [
+                                  Image.asset(
+                                    "assets/imgs/chat.png",
+                                  ),
+                                  SizedBox(width: 10,),
+
+                                  Text(
+                                    "سارة القحطاني",
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 15,
+                                      fontFamily: "CoconÆ Next Arabic",
+                                      fontWeight: FontWeight.w300,
+                                    ),
+                                  ),
+                                ],
                               ),
                               Row(
                                 children: [
@@ -1765,7 +1774,7 @@ class done_send_travil extends StatelessWidget {
                               color: Color(0xbf000000),
                             ),
                             child: Center(
-                              child: Text("رحلة صيد",
+                              child: Text("يخوت",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 6,
@@ -1787,7 +1796,7 @@ class done_send_travil extends StatelessWidget {
                               color: Color(0xffFFAC26),
                             ),
                             child: Center(
-                              child: Text("رحلة صيد",
+                              child: Text("رحلات بحرية",
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 6,
@@ -2204,7 +2213,7 @@ class done_capture_travil extends StatelessWidget {
                               color: Color(0xbf000000),
                             ),
                             child: Center(
-                              child: Text("رحلة صيد",
+                              child: Text("يخوت",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 6,
@@ -2226,7 +2235,7 @@ class done_capture_travil extends StatelessWidget {
                               color: Color(0xffFFAC26),
                             ),
                             child: Center(
-                              child: Text("رحلة صيد",
+                              child: Text("رحلات بحرية",
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 6,
