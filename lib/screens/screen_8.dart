@@ -469,41 +469,11 @@ class _new_notificationState extends State<new_notification> {
                     padding: const EdgeInsets.only(left: 8,),
                     child: Column(
                       children: [
-                        Container(
-                          width: 76.31,
-                          height: 25.94,
-                          decoration: BoxDecoration(
-                              color: Color(0xffFFAC26),
-                              borderRadius: BorderRadius.circular(8)),
-                          child: Center(
-                            child: Text("التقاط الرحلة",
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 10,
-                                  fontFamily: "CoconÆ Next Arabic",
-                                  fontWeight: FontWeight.w300,
-                                )),
-                          ),
-                        ),
+                        button_(background_color: Color(0xffFFAC26),text:"التقاط الرحله",onpressed: (){},font_color: Colors.black, ),
                         SizedBox(
                           height: 8,
                         ),
-                        Container(
-                          width: 76.31,
-                          height: 25.94,
-                          decoration: BoxDecoration(
-                              color: Color(0xbf000000),
-                              borderRadius: BorderRadius.circular(8)),
-                          child: Center(
-                            child: Text("ترك",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 10,
-                                  fontFamily: "CoconÆ Next Arabic",
-                                  fontWeight: FontWeight.w300,
-                                )),
-                          ),
-                        ),
+                        button_(background_color: Color(0xbf000000),text:"ترك",onpressed: (){},font_color: Colors.white, ),
                       ],
                     ),
                   ),
@@ -1184,41 +1154,12 @@ class flight_cancellation extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 8,),
                     child: Column(
                       children: [
-                        Container(
-                          width: 76.31,
-                          height: 25.94,
-                          decoration: BoxDecoration(
-                              color: Color.fromRGBO(115, 220, 122, 30),
-                              borderRadius: BorderRadius.circular(8)),
-                          child: Center(
-                            child: Text("تم الالتقاط",
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 10,
-                                  fontFamily: "CoconÆ Next Arabic",
-                                  fontWeight: FontWeight.w300,
-                                )),
-                          ),
-                        ),
+                        button_(background_color: Color.fromRGBO(115, 220, 122, 30),text:"تم الالتقاط",onpressed: (){},font_color: Colors.black, ),
+
                         SizedBox(
                           height: 8,
                         ),
-                        Container(
-                          width: 76.31,
-                          height: 25.94,
-                          decoration: BoxDecoration(
-                              color: Color(0xbf000000),
-                              borderRadius: BorderRadius.circular(8)),
-                          child: Center(
-                            child: Text("إلغاء الرحله",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 10,
-                                  fontFamily: "CoconÆ Next Arabic",
-                                  fontWeight: FontWeight.w300,
-                                )),
-                          ),
-                        ),
+                        button_(background_color: Color(0xbf000000),text:"الغاء الرحله",onpressed: (){},font_color: Colors.white, ),
                       ],
                     ),
                   ),
@@ -1552,22 +1493,7 @@ class new_review extends StatelessWidget {
                     SizedBox(
                       height: 8,
                     ),
-                    Container(
-                      width: 76.31,
-                      height: 25.94,
-                      decoration: BoxDecoration(
-                          color: Color(0xbf000000),
-                          borderRadius: BorderRadius.circular(8)),
-                      child: Center(
-                        child: Text("عرض التقييم",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 10,
-                              fontFamily: "CoconÆ Next Arabic",
-                              fontWeight: FontWeight.w300,
-                            )),
-                      ),
-                    ),
+                    button_(background_color: Color(0xbf000000),text:"عرض التقييم",onpressed: (){},font_color: Colors.white, ),
                   ],
                 ),
               ),
@@ -1818,41 +1744,12 @@ class done_send_travil extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 8,),
                     child: Column(
                       children: [
-                        Container(
-                          width: 76.31,
-                          height: 25.94,
-                          decoration: BoxDecoration(
-                              color: Color(0xffFFAC26),
-                              borderRadius: BorderRadius.circular(8)),
-                          child: Center(
-                            child: Text("بدا الرحلة",
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 10,
-                                  fontFamily: "CoconÆ Next Arabic",
-                                  fontWeight: FontWeight.w300,
-                                )),
-                          ),
-                        ),
+                        button_(background_color: Color(0xffFFAC26),text:"بدا الرحله",onpressed: (){},font_color: Colors.black, ),
                         SizedBox(
                           height: 8,
                         ),
-                        Container(
-                          width: 76.31,
-                          height: 25.94,
-                          decoration: BoxDecoration(
-                              color: Color(0xbf000000),
-                              borderRadius: BorderRadius.circular(8)),
-                          child: Center(
-                            child: Text("الغاء الرحله",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 10,
-                                  fontFamily: "CoconÆ Next Arabic",
-                                  fontWeight: FontWeight.w300,
-                                )),
-                          ),
-                        ),
+                        button_(background_color: Color(0xbf000000),text:"الغاء الرحله",onpressed: (){},font_color: Colors.white, ),
+
                       ],
                     ),
                   ),
@@ -2257,60 +2154,15 @@ class done_capture_travil extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 8,),
                     child: Column(
                       children: [
-                        Container(
-                          width: 76.31,
-                          height: 25.94,
-                          decoration: BoxDecoration(
-                              color: Color.fromRGBO(115, 220, 122, 30),
-                              borderRadius: BorderRadius.circular(8)),
-                          child: Center(
-                            child: Text("تم الالتقاط",
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 10,
-                                  fontFamily: "CoconÆ Next Arabic",
-                                  fontWeight: FontWeight.w300,
-                                )),
-                          ),
-                        ),
+                        button_(background_color: Color.fromRGBO(115, 220, 122, 30),text:"تم الالتقاط",onpressed: (){},font_color: Colors.black, ),
                         SizedBox(
                           height: 8,
                         ),
-                        Container(
-                          width: 76.31,
-                          height: 25.94,
-                          decoration: BoxDecoration(
-                              color: Color.fromRGBO(255, 172, 38, .54),
-                              borderRadius: BorderRadius.circular(8)),
-                          child: Center(
-                            child: Text("فى انتظار الدفع",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 10,
-                                  fontFamily: "CoconÆ Next Arabic",
-                                  fontWeight: FontWeight.w300,
-                                )),
-                          ),
-                        ),
+                        button_(background_color: Color.fromRGBO(255, 172, 38, .54),text:"فى انتظار الدفع",onpressed: (){},font_color: Colors.black, ),
                         SizedBox(
                           height: 8,
                         ),
-                        Container(
-                          width: 76.31,
-                          height: 25.94,
-                          decoration: BoxDecoration(
-                              color: Color(0xbf000000),
-                              borderRadius: BorderRadius.circular(8)),
-                          child: Center(
-                            child: Text("إلغاء الرحله",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 10,
-                                  fontFamily: "CoconÆ Next Arabic",
-                                  fontWeight: FontWeight.w300,
-                                )),
-                          ),
-                        ),
+                        button_(background_color: Color(0xbf000000),text:"الغاء الرحله",onpressed: (){},font_color: Colors.white, ),
                       ],
                     ),
                   ),
@@ -2547,6 +2399,43 @@ class done_capture_travil extends StatelessWidget {
     );
   }
 }
+
+class button_ extends StatelessWidget {
+  final VoidCallback ? onpressed;
+  final Color? background_color;
+  final Color? font_color;
+  final String ? text;
+  const button_({
+    required this.onpressed,
+    required this.background_color,
+    required this.font_color,
+    required this.text,
+    Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 89,
+      height: 25.94,
+      decoration: BoxDecoration(
+          color: background_color,
+          borderRadius: BorderRadius.circular(8)),
+      child: MaterialButton(
+        onPressed: onpressed,
+        child: Center(
+          child: Text("$text",
+              style: TextStyle(
+                color: font_color,
+                fontSize: 10,
+                fontFamily: "CoconÆ Next Arabic",
+                fontWeight: FontWeight.w300,
+              )),
+        ),
+      ),
+    );
+  }
+}
+
+
 
 
 
