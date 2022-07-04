@@ -1,8 +1,10 @@
 
 import 'package:flutter/material.dart';
-import 'package:trip/followcomplaint/followcomp.dart';
-import 'package:trip/sharedComponents/custom_appbar.dart';
-import 'package:trip/uploadComplaint/upload_complaint.dart';
+
+import '../followcomplaint/followcomp.dart';
+import '../sharedComponents/custom_appbar.dart';
+import '../uploadComplaint/upload_complaint.dart';
+
 
 class ComplaintsScreen extends StatefulWidget {
   const ComplaintsScreen({Key? key}) : super(key: key);
@@ -26,7 +28,7 @@ class _ComplaintsScreenState extends State<ComplaintsScreen> {
 
       textDirection: TextDirection.rtl,
       child: Scaffold(
-        appBar:const CustomBar(title: 'الشكاوي',),
+       // appBar:const CustomBar(title: 'الشكاوي',),
 
         bottomNavigationBar: BottomNavigationBar(
            unselectedItemColor: const Color(0xff68551A),
@@ -58,65 +60,70 @@ class _ComplaintsScreenState extends State<ComplaintsScreen> {
         ),
 
 
-        body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 27.0),
-          child: Column(children: [
-            // Figma Flutter Generator Rectangle5383Widget - RECTANGLE
-            const SizedBox(height: 25,),
-            GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const FollowComplaint()),
-                );
-              },
-              child: Container(
-                  width: double.infinity,
-                  height: 51,
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                  decoration: BoxDecoration(
-                    borderRadius : BorderRadius.circular(5.0),
-                    color : const Color.fromRGBO(243, 244, 246, 1),
-                    border : Border.all(
-                      color: const Color.fromRGBO(216, 216, 216, 1),
-                      width: 1,
-                    ),
-                  ),
-                child: Row(children: const [
-                  Icon(Icons.message, color: Color(0xffFFAC26),),
-                  SizedBox(width: 15.0,),
-                  Text('متابعة الشكاوي',style: TextStyle(color: Color(0xff273474)),),
-                ],),
-              ),
-            ),
-            const SizedBox(height: 20.0,),
-            GestureDetector(
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const UploadComplaints()),
-                );
-              },
-              child: Container(
-                width:  double.infinity,
-                height: 51,
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                decoration: BoxDecoration(
-                  borderRadius : BorderRadius.circular(5.0),
-                  color : const Color.fromRGBO(243, 244, 246, 1),
-                  border : Border.all(
-                    color: const Color.fromRGBO(216, 216, 216, 1),
-                    width: 1,
+        body: Column(
+          children: [
+            const CustomBar(title: 'الشكاوي',),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 27.0),
+              child: Column(children: [
+                // Figma Flutter Generator Rectangle5383Widget - RECTANGLE
+                const SizedBox(height: 25,),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const FollowComplaint()),
+                    );
+                  },
+                  child: Container(
+                      width: double.infinity,
+                      height: 51,
+                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                      decoration: BoxDecoration(
+                        borderRadius : BorderRadius.circular(5.0),
+                        color : const Color.fromRGBO(243, 244, 246, 1),
+                        border : Border.all(
+                          color: const Color.fromRGBO(216, 216, 216, 1),
+                          width: 1,
+                        ),
+                      ),
+                    child: Row(children: const [
+                      Icon(Icons.message, color: Color(0xffFFAC26),),
+                      SizedBox(width: 15.0,),
+                      Text('متابعة الشكاوي',style: TextStyle(color: Color(0xff273474)),),
+                    ],),
                   ),
                 ),
-                child: Row(children: const [
-                  Icon(Icons.help_outline_outlined,color: Color(0xffFFAC26),),
-                  SizedBox(width: 15.0,),
-                  Text('رفع الشكاوي',style: TextStyle(color: Color(0xff273474)),),
-                ],),
-              ),
-            )
-          ],),
+                const SizedBox(height: 20.0,),
+                GestureDetector(
+                  onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const UploadComplaints()),
+                    );
+                  },
+                  child: Container(
+                    width:  double.infinity,
+                    height: 51,
+                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                    decoration: BoxDecoration(
+                      borderRadius : BorderRadius.circular(5.0),
+                      color : const Color.fromRGBO(243, 244, 246, 1),
+                      border : Border.all(
+                        color: const Color.fromRGBO(216, 216, 216, 1),
+                        width: 1,
+                      ),
+                    ),
+                    child: Row(children: const [
+                      Icon(Icons.help_outline_outlined,color: Color(0xffFFAC26),),
+                      SizedBox(width: 15.0,),
+                      Text('رفع الشكاوي',style: TextStyle(color: Color(0xff273474)),),
+                    ],),
+                  ),
+                )
+              ],),
+            ),
+          ],
         ),
 
       ),
